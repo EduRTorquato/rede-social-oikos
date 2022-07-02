@@ -33,13 +33,12 @@ public class Profile implements Serializable
 	@Column(name = "profile_id", nullable = false)
 	private Long id;
 	
-	@NotEmpty(message = "User type can't be empty")
 	@Enumerated(EnumType.STRING)
-	@Column(name = "profile_type", nullable = false)
+	@Column(name = "profile_type", length = 10)
 	private ProfileType type;
 	
 	@NotEmpty(message = "Name field can't be empty. ")
-	@Size(min = 3, max = 50, message = "Name needs to be between 8 and 50 characters. ")
+	@Size(min = 3, max = 50, message = "Name needs to be between 3 and 50 characters. ")
 	@Column(name = "profile_name", nullable = false)
 	private String name;
 	
@@ -50,7 +49,7 @@ public class Profile implements Serializable
 	
 	@NotEmpty(message = "Email field can't be empty. ")
 	@Email
-	@Column(name = "profile_email", nullable = false, unique = true)
+	@Column(name = "profile_email", nullable = false, unique = true, length = 50)
 	private String email;
 	
 	@NotEmpty(message = "Password field can't be empty. ")
