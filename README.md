@@ -1,1 +1,2 @@
 # rede-social-oikos
+TODO
