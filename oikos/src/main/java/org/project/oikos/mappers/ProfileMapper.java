@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 public class
 ProfileMapper {
 
-	public static ProfileDto toDto(Profile profile) {
-		return ProfileDto.builder()
-				.name(profile.getName())
-				.alias(profile.getAlias())
-				.email(profile.getEmail())
-				.bio(profile.getBio())
-				.build();
+//	public static ProfileDto toDto(Profile profile) {
+//		return ProfileDto.builder()
+//				.name(profile.getName())
+//				.alias(profile.getAlias())
+//				.email(profile.getEmail())
+//				.bio(profile.getBio())
+//				.build();
 	}
 }
