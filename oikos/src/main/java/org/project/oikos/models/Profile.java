@@ -17,12 +17,17 @@ import javax.validation.constraints.Size;
 
 import org.project.oikos.models.enums.ProfileType;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter @Setter @NoArgsConstructor
+@Builder
+@Data
+@NoArgsConstructor @AllArgsConstructor
 public class Profile implements Serializable
 {	
 	
