@@ -9,6 +9,9 @@ import lombok.NoArgsConstructor;
 public class
 ProfileMapper {
 
+	public static Profile(ProfileDto dto){
+
+	}
 	public static ProfileDto toDto(Profile profile) {
 		return ProfileDto.builder()
 				.name(profile.getName())
